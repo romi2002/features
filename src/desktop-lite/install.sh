@@ -116,14 +116,14 @@ fluxbox_menu="$(cat \
 [begin] (  Application Menu  )
     [exec] (File Manager) { nautilus ~ } <>
     [exec] (Text Editor) { mousepad } <>
-    [exec] (Terminal) { tilix -w ~ -e $(readlink -f /proc/$$/exe) -il } <>
+    [exec] (Terminal) { xterm -w ~ -e $(readlink -f /proc/$$/exe) -il } <>
     [exec] (Web Browser) { x-www-browser --disable-dev-shm-usage } <>
     [submenu] (System) {}
-        [exec] (Set Resolution) { tilix -t "Set Resolution" -e bash /usr/local/bin/set-resolution } <>
+        [exec] (Set Resolution) { xterm -t "Set Resolution" -e bash /usr/local/bin/set-resolution } <>
         [exec] (Edit Application Menu) { mousepad ~/.fluxbox/menu } <>
         [exec] (Passwords and Keys) { seahorse } <>
-        [exec] (Top Processes) { tilix -t "Top" -e htop } <>
-        [exec] (Disk Utilization) { tilix -t "Disk Utilization" -e ncdu / } <>
+        [exec] (Top Processes) { xterm -t "Top" -e htop } <>
+        [exec] (Disk Utilization) { xterm -t "Disk Utilization" -e ncdu / } <>
         [exec] (Editres) {editres} <>
         [exec] (Xfontsel) {xfontsel} <>
         [exec] (Xkill) {xkill} <>
@@ -291,6 +291,7 @@ LOG=/tmp/container-init.log
 export DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS:-"autolaunch:"}"
 export DISPLAY="${DISPLAY:-:1}"
 export VNC_RESOLUTION="${VNC_RESOLUTION:-3456x2160x32}" 
+export "3456x2160x16"
 export LANG="${LANG:-"en_US.UTF-8"}"
 export LANGUAGE="${LANGUAGE:-"en_US.UTF-8"}"
 
