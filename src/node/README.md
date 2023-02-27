@@ -1,13 +1,13 @@
 
-# Node.js (via nvm) and yarn (node)
+# Node.js (via nvm), yarn and pnpm (node)
 
-Installs Node.js, nvm, yarn, and needed dependencies.
+Installs Node.js, nvm, yarn, pnpm, and needed dependencies.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/romi2002/features/node:1": {}
 }
 ```
 
@@ -49,4 +49,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/node/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/romi2002/features/blob/main/src/node/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
